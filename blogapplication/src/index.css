@@ -1,0 +1,102 @@
+body{
+ background-color:rgb(150,200, 100);
+}
+.blogapp{
+  display: inline;
+  text-align: center;
+  color: blue;
+  font-size: 30px;
+}
+.blogapp>h2{
+  animation: scroll 10s linear infinite alternate;
+  position: relative;
+  
+}
+@keyframes scroll {
+  from{
+    left: -45%;
+  }
+  to{
+    left:45%;
+  }
+}
+.buttons{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.buttons>a>button{
+  font-size:15px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+.buttons>a>button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.blogs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap:50px;
+}
+.blogs>a>button{
+  font-size: 25px;
+  border-radius: 10px;
+  background-color:aqua;
+
+  
+}
+.blogs>a>button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.form{
+  display: flex;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.form>input{
+  font-size: 20px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+.form>input:active{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.heading>h2{
+  text-align: center;
+  color: rgb(250,50, 180);
+}
+.blog{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  align-items:center;
+  gap: 20px;
+  background-color: violet;
+  border: 1px solid blue;
+}
+.blog>img{
+  width:500px
+}
+.crudbuttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+.crudbuttons>button{
+  background-color: yellow;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight:700;
+}
