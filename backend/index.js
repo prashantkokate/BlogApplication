@@ -16,4 +16,4 @@ then(()=>{
     app.listen(port,()=>{
         console.log(`listining on ${port}`)
     })
-}).catch((err)=>{console.log(err)})
+}).catch((error)=>{console.log(error)})
